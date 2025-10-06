@@ -20,52 +20,30 @@ export default function ContactPage() {
     }));
   };
 
-  // const handleSubmit = async (e) => {
-  //   e.preventDefault();
-  //   if (!formData.name || !formData.email || !formData.message) {
-  //     alert("Please fill all required fields.");
-  //     return;
-  //   }
-
-  //   setSending(true);
-  //   try {
-  //     const res = await fetch("/api/contact", {
-  //       method: "POST",
-  //       headers: { "Content-Type": "application/json" },
-  //       body: JSON.stringify(formData),
-  //     });
-
-  //     const data = await res.json();
-  //     if (!res.ok) throw new Error(data.error || "Failed to send message");
-
-  //     setPopup(true);
-  //     setFormData({ name: "", email: "", service: "", message: "" });
-  //   } catch (err) {
-  //     console.error(err);
-  //     alert(err.message || "Failed to send message. Try again later.");
-  //   } finally {
-  //     setSending(false);
-  //   }
-  // };
 
   const handleSubmit = async (e) => {
-    e.preventDefault();
+  e.preventDefault();
+  setSending(true);
 
-    try {
-      const res = await fetch("/api/contact", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
-      });
+  try {
+    const res = await fetch("/api/contact", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(formData),
+    });
 
-      const data = await res.json();
-      if (!res.ok) throw new Error(data.error || "Something went wrong");
+    const data = await res.json();
+    if (!res.ok) throw new Error(data.error || "Something went wrong");
 
-      alert("Message sent successfully!");
-    } catch (err) {
-      alert(err.message);
-    }
-  };
+    setPopup(true);
+    setFormData({ name: "", email: "", service: "", message: "" });
+  } catch (err) {
+    alert(err.message);
+  } finally {
+    setSending(false);
+  }
+};
+
 
   const closePopup = () => setPopup(false);
 

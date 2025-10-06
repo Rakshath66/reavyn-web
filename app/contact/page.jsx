@@ -67,51 +67,28 @@ const ContactSection = () => {
   };
 
   // 🚀 Handle form submit
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setSending(true);
 
-//   const handleSubmit = async (e) => {
-//   e.preventDefault();
-//   setSending(true);
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
 
-//   try {
-//     const res = await fetch("/api/contact", {
-//       method: "POST",
-//       headers: { "Content-Type": "application/json" },
-//       body: JSON.stringify(formData),
-//     });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error || "Something went wrong");
 
-//     const data = await res.json();
-
-//     if (!res.ok) throw new Error(data.error || "Something went wrong");
-
-//     setPopup(true);
-//     setFormData({ name: "", email: "", service: "", message: "" });
-//   } catch (error) {
-//     console.error("Submit error:", error);
-//     alert(error.message || "Failed to send message. Try again later.");
-//   } finally {
-//     setSending(false);
-//   }
-// };
-
-const handleSubmit = async (e) => {
-  e.preventDefault();
-
-  try {
-    const res = await fetch("/api/contact", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(formData),
-    });
-
-    const data = await res.json();
-    if (!res.ok) throw new Error(data.error || "Something went wrong");
-
-    alert("Message sent successfully!");
-  } catch (err) {
-    alert(err.message);
-  }
-};
-
+      setPopup(true);
+      setFormData({ name: "", email: "", service: "", message: "" });
+    } catch (err) {
+      alert(err.message);
+    } finally {
+      setSending(false);
+    }
+  };
 
   return (
     <>
@@ -170,7 +147,9 @@ const handleSubmit = async (e) => {
             className="space-y-6 text-left"
           >
             <div>
-              <label className="block text-sm font-medium mb-2">Full Name</label>
+              <label className="block text-sm font-medium mb-2">
+                Full Name
+              </label>
               <input
                 type="text"
                 name="name"
@@ -183,7 +162,9 @@ const handleSubmit = async (e) => {
             </div>
 
             <div>
-              <label className="block text-sm font-medium mb-2">Email Address</label>
+              <label className="block text-sm font-medium mb-2">
+                Email Address
+              </label>
               <input
                 type="email"
                 name="email"
@@ -196,7 +177,9 @@ const handleSubmit = async (e) => {
             </div>
 
             <div>
-              <label className="block text-sm font-medium mb-2">Service Interest (Optional)</label>
+              <label className="block text-sm font-medium mb-2">
+                Service Interest (Optional)
+              </label>
               <select
                 name="service"
                 value={formData.service}
@@ -232,7 +215,8 @@ const handleSubmit = async (e) => {
 
             <div className="flex flex-col md:flex-row items-center justify-between gap-4 pt-4">
               <p className="text-sm text-gray-500">
-                Your information is secure and will only be used to respond to your inquiry.
+                Your information is secure and will only be used to respond to
+                your inquiry.
               </p>
               <motion.button
                 type="submit"
@@ -267,7 +251,9 @@ const handleSubmit = async (e) => {
               >
                 <div className="flex flex-col items-center space-y-4">
                   <CheckCircle className="text-green-500 w-16 h-16" />
-                  <h3 className="text-2xl font-bold text-gray-900">Message Sent!</h3>
+                  <h3 className="text-2xl font-bold text-gray-900">
+                    Message Sent!
+                  </h3>
                   <p className="text-gray-700">
                     Thank you for reaching out. We’ll get back to you shortly.
                   </p>
@@ -291,4 +277,3 @@ const handleSubmit = async (e) => {
 };
 
 export default ContactSection;
-
