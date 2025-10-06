@@ -5,39 +5,55 @@ import { FaArrowLeft, FaArrowRight, FaCheckCircle } from "react-icons/fa";
 
 const projects = [
   {
-    title: "SwiftCart - Custom E-Commerce Platform",
-    industry: "Retail",
+    title: "Diztoversity",
+    industry: "Education / Community Platform",
     description:
-      "A custom Shopify overhaul with AI recommendations, redesigned UI via Figma, and built with React and Node.js for a seamless experience.",
+      "Diztoversity is a platform designed to bring together educational resources and community-driven learning. The client wanted a professional, modern, and mobile-friendly website to showcase their vision and provide a smooth experience for visitors.",
     objective:
-      "To enhance the e-commerce platform’s scalability and user engagement during peak seasons, we built a custom Shopify integration with AI-driven product recommendations and responsive UI/UX using Figma and React.",
+      "Create a responsive, user-friendly website Build a clean, minimal design with strong brand messaging Ensure smooth navigation across devices Optimize for performance and SEO.",
     results: [
-      "45% increase in online conversions within six months.",
-      "Enhanced scalability to manage peak season traffic surges.",
-      "Improved user engagement with personalized recommendations.",
-      "Reduced cart abandonment by 20% through optimized checkout.",
-      "Increased average order value by 15% with upselling features.",
+      "Delivered a fully responsive website with a modern UI/UX.",
+      "Improved usability and faster page load times.",
+      "Clear presentation of mission and services.",
+      "Enhanced brand credibility and online presence.",
     ],
-    image: "https://i.ibb.co/5h4f6D7p/Data.png",
-    result:
-      "This project successfully transformed the client’s e-commerce platform into a scalable, user-friendly solution, driving significant growth and efficiency during high-demand period.",
+    image: "https://i.ibb.co/27sW37qZ/Screenshot-2025-10-07-034243.png",
+    // result:
+    //   "This project successfully transformed the client’s e-commerce platform into a scalable, user-friendly solution, driving significant growth and efficiency during high-demand period.",
   },
   {
-    title: "SwiftHealth - Custom Healthcare Portal",
-    industry: "Madical",
+    title: "Hunk Toofan Project",
+    industry: "E-commerce / Retail",
     description:
-      "A secure and scalable healthcare management portal built with Next.js, ensuring HIPAA compliance and enhanced patient engagement.",
+      "The Hunk Toofan project aimed to create a modern e-commerce-style website that is visually appealing and highly interactive. The client wanted a platform that not only looks premium but also delivers a seamless user journey.",
     objective:
-      "Enable online appointment booking, secure medical records access, and AI-based health recommendations to improve patient care.",
+      "Design an elegant, modern website with intuitive navigation Optimize site performance for faster load times	Ensure mobile-first design for better reach	Provide easy content management for client updates.",
     results: [
-      "60% increase in online appointment bookings.",
-      "Improved patient satisfaction scores by 30%.",
-      "HIPAA-compliant data security features integrated.",
-      "Automated reminders reduced no-shows by 25%.",
+      "Successfully launched a visually engaging and responsive site.",
+      "Received positive customer feedback on usability and design.",
+      "Increased user engagement with smoother browsing experience.",
+      "Delivered project on time with high client satisfaction",
     ],
-    image: "https://i.ibb.co/5h4f6D7p/Data.png",
-    result:
-      "This project successfully transformed the client’s e-commerce platform into a scalable, user-friendly solution, driving significant growth and efficiency during high-demand period.",
+    image: "https://i.ibb.co/CD0Qknv/Screenshot-2025-10-07-034916.png",
+    // result:
+    //   "This project successfully transformed the client’s e-commerce platform into a scalable, user-friendly solution, driving significant growth and efficiency during high-demand period.",
+  },
+  {
+    title: "Medilife Health Care",
+    industry: "Healthcare / Medical Services",
+    description:
+      "Medilife Health Care is a global healthcare service provider. They needed a professional online presence to communicate their wide range of services and credibility in the healthcare industry. The project focused on building trust, clarity, and accessibility for patients and partners.",
+    objective:
+      "Build a professional and trustworthy healthcare website	Ensure responsive design across all devices	Present complex medical information clearly and simply	Improve accessibility and ease of navigation.",
+    results: [
+      "Delivered a fast, responsive website optimized for patients and partners.",
+      "Clear service presentation leading to improved patient inquiries.",
+      "Strengthened online credibility and trust.",
+      "Enhanced client visibility and user engagement online.",
+    ],
+    image: "https://i.ibb.co/Xx2yqhh8/Screenshot-2025-10-07-035315.png",
+    // result:
+    //   "This project successfully transformed the client’s e-commerce platform into a scalable, user-friendly solution, driving significant growth and efficiency during high-demand period.",
   },
 ];
 

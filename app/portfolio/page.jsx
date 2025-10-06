@@ -14,21 +14,6 @@ import TeamSection from "../components/aboutcomponents/TeamSection";
 import CoreValues from "../components/aboutcomponents/CoreValues";
 import ShowcaseSection from "../components/ShowcaseSlider";
 
-const projects = [
-  {
-   
-    image: "https://i.ibb.co/5h4f6D7p/Data.png",
-    result:
-      "This project successfully transformed the client’s e-commerce platform into a scalable, user-friendly solution, driving significant growth and efficiency during high-demand period.",
-  },
-  {
-    
-    image: "https://i.ibb.co/5h4f6D7p/Data.png",
-    result:
-      "This project successfully transformed the client’s e-commerce platform into a scalable, user-friendly solution, driving significant growth and efficiency during high-demand period.",
-  },
-];
-
 export default function AboutPage() {
   const canvasRef = useRef(null);
   const [contentLoaded, setContentLoaded] = useState(false);
@@ -169,9 +154,11 @@ export default function AboutPage() {
           <div className="bg-[#8EADD5]  max-md:h-[102rem] text-black rounded-xl shadow-lg p-6 flex flex-col md:flex-row gap-6">
             <div className="absolute ">
               <h3 className="text-3xl max-md:text-2xl font-semibold">
-                SwiftCart - Custom E-Commerce Platform
+                Diztoversity
               </h3>
-              <p className="text-gray-600 mb-4">Client Industry: Retail</p>
+              <p className="text-gray-600 mb-4">
+                Client Industry: Education / Community Platform
+              </p>
             </div>
             <div className="absolute ml-[50rem] w-75 max-md:relative max-md:ml-0 max-md:w-50 max-md:mt-28 ">
               <img src="https://i.ibb.co/5qX9whG/Frame-192.png" alt="" />
@@ -179,8 +166,8 @@ export default function AboutPage() {
             {/* Image */}
             <div className="flex-shrink-0 mt-20 max-md:mt-2">
               <img
-                src={projects[current].image}
-                alt={projects[current].title}
+                src="https://i.ibb.co/27sW37qZ/Screenshot-2025-10-07-034243.png"
+                alt=""
                 className="rounded-lg shadow-md w-[418px] h-[502px] max-md:w-[425px]  max-md:h-[340px]"
               />
             </div>
@@ -192,59 +179,45 @@ export default function AboutPage() {
                   <Target /> Project Description
                 </h4>
                 <p className="text-gray-700 mb-3 ml-8 w-[230px] text-md">
-                  A custom Shopify overhaul with AI recommendations, redesigned
-                  UI via Figma, and built with React and Node.js for a seamless
-                  experience.
+                  Diztoversity is a platform designed to bring together
+                  educational resources and community-driven learning. The
+                  client wanted a professional, modern, and mobile-friendly
+                  website to showcase their vision and provide a smooth
+                  experience for visitors.
                 </p>
 
                 <h4 className="font-semibold mb-1 flex gap-2 text-2xl">
                   <Crosshair /> Objective
                 </h4>
                 <p className="text-gray-700 mb-3 ml-8 w-[230px] text-md">
-                  To enhance the e-commerce platform’s scalability and user
-                  engagement during peak seasons, we built a custom Shopify
-                  integration with AI-driven product recommendations and
-                  responsive UI/UX using Figma and React.
+                  Create a responsive, user-friendly website Build a clean,
+                  minimal design with strong brand messaging Ensure smooth
+                  navigation across devices Optimize for performance and SEO.
                 </p>
               </div>
               <div className="ml-5  max-md:absolute  max-md:mt-[30rem]  max-md:w-[280px]  max-md:-m-1">
                 <h4 className="font-semibold mb-2 flex text-2xl gap-2">
                   <Box /> Result
                 </h4>
-                <p className="ml-8">{projects[current].result}</p>
+                {/* <p className="ml-8">{projects[current].result}</p> */}
                 <ul className="space-y-2 text-gray-800">
                   <li className="flex items-start ml-8 mt-2 gap-2">
                     <FaCheckCircle className="text-black mt-1" />
                     <span>
-                      45% increase in online conversions within six months.
+                      Delivered a fully responsive website with a modern UI/UX.
                     </span>
                   </li>
                   <li className="flex items-start ml-8 mt-2 gap-2">
                     <FaCheckCircle className="text-black mt-1" />
-                    <span>
-                      Enhanced scalability to manage peak season traffic surges.
-                    </span>
+                    <span>Improved usability and faster page load times.</span>
                   </li>
                   <li className="flex items-start ml-8 mt-2 gap-2">
                     <FaCheckCircle className="text-black mt-1" />
-                    <span>
-                      Improved user engagement with personalized
-                      recommendations.
-                    </span>
+                    <span>Clear presentation of mission and services.</span>
                   </li>
                   <li className="flex items-start ml-8 mt-2 gap-2">
                     <FaCheckCircle className="text-black mt-1" />
-                    <span>
-                      Reduced cart abandonment by 20% through optimized
-                      checkout.
-                    </span>
-                  </li>
-                  <li className="flex items-start ml-8 mt-2 gap-2">
-                    <FaCheckCircle className="text-black mt-1" />
-                    <span>
-                      Increased average order value by 15% with upselling
-                      features.
-                    </span>
+                    <span>Enhanced brand credibility and online presence.</span>
                   </li>
                 </ul>
               </div>
@@ -253,9 +226,11 @@ export default function AboutPage() {
           <div className="bg-[#D4FFE6] max-md:h-[102rem] mt-10 text-black rounded-xl shadow-lg p-6 flex flex-col md:flex-row gap-6">
             <div className="absolute ">
               <h3 className="text-3xl max-md:text-2xl font-semibold">
-                SwiftCart - Custom E-Commerce Platform
+                Hunk Toofan Project
               </h3>
-              <p className="text-gray-600 mb-4">Client Industry: Retail</p>
+              <p className="text-gray-600 mb-4">
+                Client Industry: E-commerce / Retail
+              </p>
             </div>
             <div className="absolute ml-[50rem] w-75 max-md:relative max-md:ml-0 max-md:w-50 max-md:mt-28 ">
               <img src="https://i.ibb.co/5qX9whG/Frame-192.png" alt="" />
@@ -263,8 +238,8 @@ export default function AboutPage() {
             {/* Image */}
             <div className="flex-shrink-0 mt-20 max-md:mt-2">
               <img
-                src={projects[current].image}
-                alt={projects[current].title}
+                src="https://i.ibb.co/CD0Qknv/Screenshot-2025-10-07-034916.png"
+                alt=""
                 className="rounded-lg shadow-md w-[418px] h-[502px] max-md:w-[425px]  max-md:h-[340px]"
               />
             </div>
@@ -276,58 +251,52 @@ export default function AboutPage() {
                   <Target /> Project Description
                 </h4>
                 <p className="text-gray-700 mb-3 ml-8 w-[230px] text-md">
-                  A custom Shopify overhaul with AI recommendations, redesigned
-                  UI via Figma, and built with React and Node.js for a seamless
-                  experience.
+                  The Hunk Toofan project aimed to create a modern
+                  e-commerce-style website that is visually appealing and highly
+                  interactive. The client wanted a platform that not only looks
+                  premium but also delivers a seamless user journey.
                 </p>
 
                 <h4 className="font-semibold mb-1 flex gap-2 text-2xl">
                   <Crosshair /> Objective
                 </h4>
                 <p className="text-gray-700 mb-3 ml-8 w-[230px] text-md">
-                  To enhance the e-commerce platform’s scalability and user
-                  engagement during peak seasons, we built a custom Shopify
-                  integration with AI-driven product recommendations and
-                  responsive UI/UX using Figma and React.
+                  Design an elegant, modern website with intuitive navigation
+                  Optimize site performance for faster load times Ensure
+                  mobile-first design for better reach Provide easy content
+                  management for client updates.
                 </p>
               </div>
               <div className="ml-5  max-md:absolute  max-md:mt-[30rem]  max-md:w-[280px]  max-md:-m-1">
                 <h4 className="font-semibold mb-2 flex text-2xl gap-2">
                   <Box /> Result
                 </h4>
-                <p className="ml-8">{projects[current].result}</p>
                 <ul className="space-y-2 text-gray-800">
                   <li className="flex items-start ml-8 mt-2 gap-2">
                     <FaCheckCircle className="text-black mt-1" />
                     <span>
-                      45% increase in online conversions within six months.
+                      Successfully launched a visually engaging and responsive
+                      site.
                     </span>
                   </li>
                   <li className="flex items-start ml-8 mt-2 gap-2">
                     <FaCheckCircle className="text-black mt-1" />
                     <span>
-                      Enhanced scalability to manage peak season traffic surges.
+                      Received positive customer feedback on usability and
+                      design.
                     </span>
                   </li>
                   <li className="flex items-start ml-8 mt-2 gap-2">
                     <FaCheckCircle className="text-black mt-1" />
                     <span>
-                      Improved user engagement with personalized
-                      recommendations.
+                      Increased user engagement with smoother browsing
+                      experience.
                     </span>
                   </li>
                   <li className="flex items-start ml-8 mt-2 gap-2">
                     <FaCheckCircle className="text-black mt-1" />
                     <span>
-                      Reduced cart abandonment by 20% through optimized
-                      checkout.
-                    </span>
-                  </li>
-                  <li className="flex items-start ml-8 mt-2 gap-2">
-                    <FaCheckCircle className="text-black mt-1" />
-                    <span>
-                      Increased average order value by 15% with upselling
-                      features.
+                      Delivered project on time with high client satisfaction
                     </span>
                   </li>
                 </ul>
@@ -337,9 +306,11 @@ export default function AboutPage() {
           <div className="bg-[#FBBEF8]  max-md:h-[102rem] mt-10 text-black rounded-xl shadow-lg p-6 flex flex-col md:flex-row gap-6">
             <div className="absolute ">
               <h3 className="text-3xl max-md:text-2xl font-semibold">
-                SwiftCart - Custom E-Commerce Platform
+                Medilife Health Care
               </h3>
-              <p className="text-gray-600 mb-4">Client Industry: Retail</p>
+              <p className="text-gray-600 mb-4">
+                Client Industry: Healthcare / Medical Services
+              </p>
             </div>
             <div className="absolute ml-[50rem] w-75 max-md:relative max-md:ml-0 max-md:w-50 max-md:mt-28 ">
               <img src="https://i.ibb.co/5qX9whG/Frame-192.png" alt="" />
@@ -347,8 +318,8 @@ export default function AboutPage() {
             {/* Image */}
             <div className="flex-shrink-0 mt-20 max-md:mt-2">
               <img
-                src={projects[current].image}
-                alt={projects[current].title}
+                src="https://i.ibb.co/Xx2yqhh8/Screenshot-2025-10-07-035315.png"
+                alt=""
                 className="rounded-lg shadow-md w-[418px] h-[502px] max-md:w-[425px]  max-md:h-[340px]"
               />
             </div>
@@ -360,60 +331,52 @@ export default function AboutPage() {
                   <Target /> Project Description
                 </h4>
                 <p className="text-gray-700 mb-3 ml-8 w-[230px] text-md">
-                  A custom Shopify overhaul with AI recommendations, redesigned
-                  UI via Figma, and built with React and Node.js for a seamless
-                  experience.
+                  Medilife Health Care is a global healthcare service provider.
+                  They needed a professional online presence to communicate
+                  their wide range of services and credibility in the healthcare
+                  industry. The project focused on building trust, clarity, and
+                  accessibility for patients and partners.
                 </p>
 
                 <h4 className="font-semibold mb-1 flex gap-2 text-2xl">
                   <Crosshair /> Objective
                 </h4>
                 <p className="text-gray-700 mb-3 ml-8 w-[230px] text-md">
-                  To enhance the e-commerce platform’s scalability and user
-                  engagement during peak seasons, we built a custom Shopify
-                  integration with AI-driven product recommendations and
-                  responsive UI/UX using Figma and React.
+                  Build a professional and trustworthy healthcare website Ensure
+                  responsive design across all devices Present complex medical
+                  information clearly and simply Improve accessibility and ease
+                  of navigation.
                 </p>
               </div>
               <div className="ml-5  max-md:absolute  max-md:mt-[30rem]  max-md:w-[280px]  max-md:-m-1">
                 <h4 className="font-semibold mb-2 flex text-2xl gap-2">
                   <Box /> Result
                 </h4>
-                <p className="ml-8">{projects[current].result}</p>
                 <ul className="space-y-2 text-gray-800">
                   <li className="flex items-start ml-8 mt-2 gap-2">
                     <FaCheckCircle className="text-black mt-1" />
                     <span>
-                      45% increase in online conversions within six months.
+                      Delivered a fast, responsive website optimized for patients and partners.
                     </span>
                   </li>
                   <li className="flex items-start ml-8 mt-2 gap-2">
                     <FaCheckCircle className="text-black mt-1" />
                     <span>
-                      Enhanced scalability to manage peak season traffic surges.
+                     Clear service presentation leading to improved patient inquiries.
                     </span>
                   </li>
                   <li className="flex items-start ml-8 mt-2 gap-2">
                     <FaCheckCircle className="text-black mt-1" />
                     <span>
-                      Improved user engagement with personalized
-                      recommendations.
+                      Strengthened online credibility and trust.
                     </span>
                   </li>
                   <li className="flex items-start ml-8 mt-2 gap-2">
                     <FaCheckCircle className="text-black mt-1" />
                     <span>
-                      Reduced cart abandonment by 20% through optimized
-                      checkout.
+                     Enhanced client visibility and user engagement online.
                     </span>
-                  </li>
-                  <li className="flex items-start ml-8 mt-2 gap-2">
-                    <FaCheckCircle className="text-black mt-1" />
-                    <span>
-                      Increased average order value by 15% with upselling
-                      features.
-                    </span>
-                  </li>
+                  </li>                
                 </ul>
               </div>
             </div>
