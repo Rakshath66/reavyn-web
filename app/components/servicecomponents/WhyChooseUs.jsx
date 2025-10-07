@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 export default function WhyChooseUs() {
   return (
     <section
-      className="relative w-full py-20 px-6 md:px-12 lg:px-20 text-white bg-black"
+      className="relative w-full py-20 max-md:py-10 px-6 md:px-12 lg:px-20 text-white bg-black"
       style={{
         backgroundImage: "url('https://i.ibb.co/fzKzhNJr/Dotted-Pop-Halftone-Geometric-Texture-2-Streamline-Textures-Geometric.png')",
         backgroundSize: "cover",
@@ -36,7 +36,7 @@ export default function WhyChooseUs() {
           </motion.p>
 
           <motion.a
-            href="#contact"
+            href="/contact"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             className="inline-flex items-center px-6 py-3 rounded-lg text-white font-medium 

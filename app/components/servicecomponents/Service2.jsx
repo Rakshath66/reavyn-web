@@ -139,7 +139,7 @@ const Service2 = () => {
             Ready to elevate your business with our tech expertise?
           </p>
           <motion.a
-            href="#contact"
+            href="/contact"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             className="inline-block mt-6 px-6 py-2 border border-blue-500 rounded-lg text-white hover:bg-blue-600 hover:border-blue-600 transition"

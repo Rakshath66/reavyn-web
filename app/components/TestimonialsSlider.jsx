@@ -9,27 +9,27 @@ import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 /* Testimonials sample data - replace with your real content */
 const testimonials = [
   {
-    company: "SwiftCart",
+    company: "Diztoversity",
     feedback:
-      "Reavyn Tech Alliance turned our e-commerce struggles into a triumph. Their AI integration and sleek design boosted our conversions by 45%—truly a game-changer.",
-    author: "Jane Doe",
-    role: "CEO, SwiftCart Retail",
+      "They understood our vision and delivered a clean, responsive website that perfectly represents us.",
+    author: "MOHD SAAD KHAN ",
+    role: "CEO",
     avatar: "https://i.pravatar.cc/100?img=1",
   },
   {
-    company: "Dupilo",
+    company: "Hunk Toofan Project",
     feedback:
-      "The automation tools saved us countless hours. We’ve seen a 35% increase in efficiency since partnering with Reavyn Tech Alliance.",
-    author: "John Smith",
-    role: "CTO, Dupilo",
+      "A modern, user-friendly site delivered on time — our customers love the smooth experience!",
+    author: "Arpit Sonker",
+    role: "Co-founder",
     avatar: "https://i.pravatar.cc/100?img=2",
   },
   {
-    company: "FinServe",
+    company: "Medilife Health Care",
     feedback:
-      "Their AI-driven chatbot reduced call center volume drastically while improving customer satisfaction. Excellent work!",
-    author: "Emily Davis",
-    role: "COO, FinServe Bank",
+      "Professional, responsive, and trustworthy website — it has already improved patient engagement.",
+    author: "Saif Malik",
+    role: "CEO",
     avatar: "https://i.pravatar.cc/100?img=3",
   },
 ];

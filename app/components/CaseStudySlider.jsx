@@ -4,34 +4,51 @@ import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
 const caseStudies = [
   {
-    title: "EduBot Deployment for Education",
+    title: "Diztoversity Website Project",
     description:
-      "This initiative involved creating a smart virtual agent tailored to handle common student inquiries, featuring natural language processing and a sleek, accessible design, built to enhance engagement across multiple devices.",
+      "Developed a responsive, modern web platform for Diztoversity to establish a strong online presence and clearly communicate their brand mission, services, and engagement with their audience.",
     challenge:
-      "To streamline support and improve student experience, we developed a 24/7 AI chatbot using Python and Dialogflow, integrated with their existing CRM, and designed an intuitive interface with Adobe XD.",
+      "The client needed a clean, high-performance website that balanced design appeal with usability — communicating the brand message effectively across desktop and mobile while staying fast and easy to maintain.",
     objective:
-      "Deliver a student-first AI chatbot to enhance learning accessibility and automate repetitive queries.",
+      "Design and build a scalable, SEO-friendly, and responsive website that showcases Diztoversity’s mission and services with a seamless user experience.",
     results: [
-      "Reduced support queries by 40% within three months.",
-      "Increased student satisfaction scores by 25%.",
-      "Decreased operational costs by 15%.",
-      "Enabled 24/7 availability, supporting global student access.",
-      "Improved data collection for personalized follow-ups.",
+      "Delivered a fully responsive site optimized for performance and SEO.",
+      "Achieved smooth cross-device navigation and accessibility.",
+      "Improved content presentation and visual hierarchy.",
+      "Enhanced brand credibility through a modern, minimal design.",
+      "Client satisfaction: “Working with Reavyn was a smooth and professional experience. They turned our vision into a beautiful, functional site.”",
     ],
   },
   {
-    title: "FinBot for Banking Support",
+    title: "Hunk Toofan Website Project",
     description:
-      "We built a financial assistant chatbot for a leading bank to handle routine customer queries, enable seamless transactions, and reduce call center load.",
+      "Developed a professional and responsive website for Hunk Toofan to establish a strong digital presence and effectively showcase their offerings, story, and values.",
     challenge:
-      "Banks faced high call center volumes and long wait times. We developed a chatbot to provide instant responses and automate common banking queries.",
+      "The main challenge was creating a mobile-responsive, fast-loading website that balanced design aesthetics with usability, ensuring smooth performance across devices and easy maintainability for future updates.",
     objective:
-      "Deliver a secure, responsive, and customer-friendly AI chatbot that integrates with banking APIs for account and transaction inquiries.",
+      "Deliver a modern, performance-optimized website that reflects the client’s identity, enhances user engagement, and provides a seamless browsing experience across all devices.",
     results: [
-      "30% reduction in call center workload.",
-      "Increased self-service adoption by 50%.",
-      "Improved transaction turnaround time by 40%.",
-      "Enhanced customer experience with 24/7 support.",
+      "Created a fully responsive and SEO-friendly website with optimized performance.",
+      "Enhanced brand credibility through clean UI, intuitive navigation, and professional layout.",
+      "Improved load time and reduced bounce rate on mobile devices.",
+      "Delivered a user-friendly structure guiding visitors to key actions like contact and services.",
+      "Client feedback: “Reavyn exceeded our expectations with a modern, polished, and highly functional website.”",
+    ],
+  },
+  {
+    title: "Medilife Health Care Website",
+    description:
+      "Developed a clean, professional, and responsive website for Medilife Health Care to build credibility, clearly present their medical services, and improve global patient engagement.",
+    challenge:
+      "The main challenge was to organize complex healthcare information in a clear and trustworthy way while ensuring strong performance, accessibility, and responsiveness across all devices.",
+    objective:
+      "Create a fast-loading, SEO-friendly website that communicates trust, simplifies navigation for users, and allows the client to easily maintain and update content.",
+    results: [
+      "Delivered a professional and credible healthcare website aligned with the brand’s mission.",
+      "Improved performance and faster page load times for better user experience.",
+      "Enhanced accessibility and responsiveness across desktop, tablet, and mobile.",
+      "Simplified user flow for contacting or locating services, improving patient engagement.",
+      "Client feedback: “A professional, responsive, and trustworthy website — it has already improved patient engagement.”",
     ],
   },
 ];
@@ -61,11 +78,11 @@ export default function CaseStudySlider() {
             Case Studies
           </h3>
           <h2 className="text-3xl md:text-5xl font-bold mt-2">
-            Showcase of Innovation
+            How We Transform Businesses.
           </h2>
           <p className="text-gray-300 mt-4 max-w-3xl text-xl max-md:text-base">
-            Discover how Reavyn Tech Alliance has transformed challenges into
-            triumphs with cutting-edge development and design solutions.
+            Explore detailed accounts of our projects and the results they
+            achieved.
           </p>
         </div>
 
@@ -88,7 +105,9 @@ export default function CaseStudySlider() {
             <div className="grid gap-6 md:grid-cols-2">
               {/* Challenge + Objective */}
               <div>
-                <h4 className="font-semibold mb-2 max-md:text-2xl text-3xl">Challenge</h4>
+                <h4 className="font-semibold mb-2 max-md:text-2xl text-3xl">
+                  Challenge
+                </h4>
                 <p className="text-gray-300 text-md ml-4 max-md:text-base mb-4">
                   {caseStudies[current].challenge}
                 </p>
@@ -103,7 +122,9 @@ export default function CaseStudySlider() {
 
               {/* Results */}
               <div>
-                <h4 className="font-semibold mb-3 max-md:text-2xl text-3xl">Results</h4>
+                <h4 className="font-semibold mb-3 max-md:text-2xl text-3xl">
+                  Results
+                </h4>
                 <ul className="list-disc list-inside text-gray-300 space-y-2 text-md ml-2 max-md:text-sm ">
                   {caseStudies[current].results.map((res, idx) => (
                     <li key={idx}>{res}</li>
@@ -115,9 +136,12 @@ export default function CaseStudySlider() {
 
           {/* Bottom Section */}
           <div className="flex flex-col md:flex-row items-center justify-between gap-4 mt-8">
-            <button className="bg-[#564AFF] text-white px-6 py-2 rounded-lg hover:bg-[#564AFF] cursor-pointer transition w-full md:w-auto shadow-lg">
+            <a
+              href="/casestudies"
+              className="bg-[#564AFF] max-md:text-center text-white px-6 py-3 rounded-lg hover:bg-[#564AFF] cursor-pointer transition w-full md:w-auto shadow-lg"
+            >
               Explore All →
-            </button>
+            </a>
 
             <div className="flex gap-4">
               <button

@@ -41,7 +41,7 @@ const steps = [
 
 const ProcessSection = () => {
   return (
-    <section className="bg-black text-white py-20 h-[197rem] max-md:h0rem] px-20 relative">
+    <section className="bg-black text-white max-md:py-5 py-20 h-[197rem] max-md:h-[190rem] px-20 relative">
       <div className="max-w-7xl mx-auto max-md:-ml-12">
         {/* Header */}
         <div className="text-center max-md:text-left mb-16">

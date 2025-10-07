@@ -65,7 +65,7 @@ const services = [
 const HomeServices = () => {
   return (
     <section
-      className="relative text-white py-20 px-6 md:px-16 bg-cover bg-center"
+      className="relative text-white max-md:py-5  py-20 px-6 bg-cover bg-center"
       style={{
         backgroundImage:
           "url('https://i.ibb.co/nN3dMctB/Screen-3-About-Us-4x-bg-1.png')",
@@ -137,7 +137,7 @@ const HomeServices = () => {
             Ready to elevate your business with our tech expertise?
           </p>
           <motion.a
-            href="#contact"
+            href="/contact"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             className="inline-block mt-6 px-6 py-2 border border-blue-500 rounded-lg text-white hover:bg-blue-600 hover:border-blue-600 transition"

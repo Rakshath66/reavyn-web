@@ -117,7 +117,7 @@ export default function AboutPage() {
 
           {/* CTA Button */}
           <motion.a
-            href="#contact"
+            href="/contact"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             initial={{ opacity: 0, y: 30 }}
@@ -151,16 +151,16 @@ export default function AboutPage() {
           </p>
 
           {/* Project Card */}
-          <div className="bg-[#8EADD5]  max-md:h-[102rem] text-black rounded-xl shadow-lg p-6 flex flex-col md:flex-row gap-6">
+          <div className="bg-[#8EADD5]  max-md:h-[84rem] text-black rounded-xl shadow-lg p-6 flex flex-col md:flex-row gap-6">
             <div className="absolute ">
               <h3 className="text-3xl max-md:text-2xl font-semibold">
                 Diztoversity
               </h3>
-              <p className="text-gray-600 mb-4">
+              <p className="text-gray-600 mb-4 max-md:w-75">
                 Client Industry: Education / Community Platform
               </p>
             </div>
-            <div className="absolute ml-[50rem] w-75 max-md:relative max-md:ml-0 max-md:w-50 max-md:mt-28 ">
+            <div className="absolute ml-[50rem] w-75 max-md:relative max-md:ml-0 max-md:w-50 max-md:mt-24 ">
               <img src="https://i.ibb.co/5qX9whG/Frame-192.png" alt="" />
             </div>
             {/* Image */}
@@ -173,7 +173,7 @@ export default function AboutPage() {
             </div>
 
             {/* Content */}
-            <div className="flex  mt-20  max-md:mt-10">
+            <div className="flex  mt-20  max-md:mt-3">
               <div className="reative">
                 <h4 className="font-semibold mb-1 flex  max-md: gap-2 text-2xl">
                   <Target /> Project Description
@@ -223,16 +223,16 @@ export default function AboutPage() {
               </div>
             </div>
           </div>
-          <div className="bg-[#D4FFE6] max-md:h-[102rem] mt-10 text-black rounded-xl shadow-lg p-6 flex flex-col md:flex-row gap-6">
+          <div className="bg-[#D4FFE6] max-md:h-[85rem] mt-10 text-black rounded-xl shadow-lg p-6 flex flex-col md:flex-row gap-6">
             <div className="absolute ">
               <h3 className="text-3xl max-md:text-2xl font-semibold">
                 Hunk Toofan Project
               </h3>
-              <p className="text-gray-600 mb-4">
+              <p className="text-gray-600 mb-4 max-md:w-75">
                 Client Industry: E-commerce / Retail
               </p>
             </div>
-            <div className="absolute ml-[50rem] w-75 max-md:relative max-md:ml-0 max-md:w-50 max-md:mt-28 ">
+            <div className="absolute ml-[50rem] w-75 max-md:relative max-md:ml-0 max-md:w-50 max-md:mt-20 ">
               <img src="https://i.ibb.co/5qX9whG/Frame-192.png" alt="" />
             </div>
             {/* Image */}
@@ -245,7 +245,7 @@ export default function AboutPage() {
             </div>
 
             {/* Content */}
-            <div className="flex  mt-20  max-md:mt-10">
+            <div className="flex  mt-20  max-md:mt-1">
               <div className="reative">
                 <h4 className="font-semibold mb-1 flex  max-md: gap-2 text-2xl">
                   <Target /> Project Description
@@ -303,16 +303,16 @@ export default function AboutPage() {
               </div>
             </div>
           </div>
-          <div className="bg-[#FBBEF8]  max-md:h-[102rem] mt-10 text-black rounded-xl shadow-lg p-6 flex flex-col md:flex-row gap-6">
+          <div className="bg-[#FBBEF8]  max-md:h-[90rem] mt-10 text-black rounded-xl shadow-lg p-6 flex flex-col md:flex-row gap-6">
             <div className="absolute ">
               <h3 className="text-3xl max-md:text-2xl font-semibold">
                 Medilife Health Care
               </h3>
-              <p className="text-gray-600 mb-4">
+              <p className="text-gray-600 mb-4 max-md:w-75">
                 Client Industry: Healthcare / Medical Services
               </p>
             </div>
-            <div className="absolute ml-[50rem] w-75 max-md:relative max-md:ml-0 max-md:w-50 max-md:mt-28 ">
+            <div className="absolute ml-[50rem] w-75 max-md:relative max-md:ml-0 max-md:w-50 max-md:mt-24 ">
               <img src="https://i.ibb.co/5qX9whG/Frame-192.png" alt="" />
             </div>
             {/* Image */}
@@ -325,7 +325,7 @@ export default function AboutPage() {
             </div>
 
             {/* Content */}
-            <div className="flex  mt-20  max-md:mt-10">
+            <div className="flex  mt-20  max-md:mt-3">
               <div className="reative">
                 <h4 className="font-semibold mb-1 flex  max-md: gap-2 text-2xl">
                   <Target /> Project Description
@@ -348,7 +348,7 @@ export default function AboutPage() {
                   of navigation.
                 </p>
               </div>
-              <div className="ml-5  max-md:absolute  max-md:mt-[30rem]  max-md:w-[280px]  max-md:-m-1">
+              <div className="ml-5  max-md:absolute  max-md:mt-[33rem]  max-md:w-[280px]  max-md:-m-1">
                 <h4 className="font-semibold mb-2 flex text-2xl gap-2">
                   <Box /> Result
                 </h4>
@@ -412,7 +412,7 @@ export default function AboutPage() {
 
           {/* CTA Button */}
           <motion.a
-            href="#contact"
+            href="/contact"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             initial={{ opacity: 0, y: 30 }}
@@ -422,7 +422,7 @@ export default function AboutPage() {
             className="inline-flex items-center px-6 py-3 rounded-lg text-white font-medium 
                      bg-gradient-to-r from-blue-600 to-indigo-500 shadow-lg hover:opacity-90 transition"
           >
-            Discuss Project
+            Discuss Project →
           </motion.a>
         </div>
       </section>

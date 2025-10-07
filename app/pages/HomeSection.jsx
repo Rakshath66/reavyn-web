@@ -175,7 +175,7 @@ export default function HomeSection() {
             </ul>
 
             <motion.a
-              href="#contact"
+              href="/contact"
               initial={{ opacity: 0, x: 20, y: 8 }}
               animate={
                 contentLoaded

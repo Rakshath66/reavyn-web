@@ -39,11 +39,11 @@ export default function Footer() {
         <div>
           <h3 className="text-white font-semibold mb-4">GET INVOLVED</h3>
           <ul className="space-y-2 text-sm">
-            <li>Careers</li>
+            {/* <li>Careers</li> */}
             <li>Blog</li>
             <li>Contact Us</li>
             <li>Schedule a Consultation</li>
-            <li>Bug Bounty</li>
+            {/* <li>Bug Bounty</li> */}
           </ul>
         </div>
 
@@ -51,7 +51,7 @@ export default function Footer() {
         <div>
           <h3 className="text-white font-semibold mb-4">STAY CONNECTED</h3>
           <ul className="space-y-2 text-sm">
-            <li>Newsletter Signup</li>
+            {/* <li>Newsletter Signup</li> */}
             <li>Twitter</li>
             <li>LinkedIn</li>
             <li>Instagram</li>
@@ -79,9 +79,9 @@ export default function Footer() {
             <a href="#" className="hover:text-white">
               <FaInstagram />
             </a>
-            <a href="#" className="hover:text-white">
+            {/* <a href="#" className="hover:text-white">
               <FaXing />
-            </a>
+            </a> */}
           </div>
         </div>
       </div>

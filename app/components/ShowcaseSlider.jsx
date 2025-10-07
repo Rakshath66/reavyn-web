@@ -86,16 +86,16 @@ export default function ShowcaseSection() {
         </div>
 
         {/* Card */}
-        <div className="bg-green-100  max-md:h-[102rem] text-black rounded-xl shadow-lg p-6 flex flex-col md:flex-row gap-6">
+        <div className="bg-green-100  max-md:h-[88rem] text-black rounded-xl shadow-lg p-6 flex flex-col md:flex-row gap-6">
           <div className="absolute ">
             <h3 className="text-3xl max-md:text-2xl font-semibold">
               {projects[current].title}
             </h3>
-            <p className="text-gray-600 mb-4">
+            <p className="text-gray-600 mb-4 max-md:w-75">
               Client Industry: {projects[current].industry}
             </p>
           </div>
-          <div className="absolute ml-[50rem] w-75 max-md:relative max-md:ml-0 max-md:w-50 max-md:mt-28 ">
+          <div className="absolute ml-[50rem] w-75 max-md:relative max-md:ml-0 max-md:w-50 max-md:mt-24 ">
             <img src="https://i.ibb.co/5qX9whG/Frame-192.png" alt="" />
           </div>
           {/* Image */}
@@ -108,7 +108,7 @@ export default function ShowcaseSection() {
           </div>
 
           {/* Content */}
-          <div className="flex  mt-20  max-md:mt-10">
+          <div className="flex  mt-20  max-md:mt-1">
             <div className="reative">
               <h4 className="font-semibold mb-1 flex  max-md: gap-2 text-2xl">
                 <Target /> Project Description
@@ -117,14 +117,14 @@ export default function ShowcaseSection() {
                 {projects[current].description}
               </p>
 
-              <h4 className="font-semibold mb-1 flex gap-2 text-2xl">
+              <h4 className="font-semibold mb-1 max-md flex gap-2 text-2xl">
                 <Crosshair /> Objective
               </h4>
               <p className="text-gray-700 mb-3 ml-8 w-[230px] text-md">
                 {projects[current].objective}
               </p>
             </div>
-            <div className="ml-5  max-md:absolute  max-md:mt-[30rem]  max-md:w-[280px]  max-md:-m-1">
+            <div className="ml-5  max-md:absolute  max-md:mt-[33rem]  max-md:w-[280px]   max-md:-m-1">
               <h4 className="font-semibold mb-2 flex text-2xl gap-2">
                 <Box /> Result
               </h4>
@@ -142,14 +142,14 @@ export default function ShowcaseSection() {
         </div>
 
         {/* See All */}
-        <div className="text-left mt-6">
-          <button className="bg-[#564AFF] cursor-pointer text-white px-6 py-2 rounded-lg  transition">
+        <div className="text-left mt-7">
+          <a href="/portfolio" className="bg-[#564AFF] cursor-pointer text-white px-6 py-3 rounded-lg  transition">
             See All →
-          </button>
+          </a>
         </div>
 
         {/* Bottom Navigation */}
-        <div className=" flex justify-center cursor-pointer items-end text-right gap-6 -mt-10 ml-[60rem]  max-md:ml-[13rem]">
+        <div className=" flex justify-center cursor-pointer items-end text-right gap-6 -mt-8 ml-[60rem]  max-md:ml-[13rem]">
           <button
             onClick={prevSlide}
             className="w-10 h-10 flex items-center justify-center rounded-full border border-gray-500 hover:bg-white hover:text-black transition"
