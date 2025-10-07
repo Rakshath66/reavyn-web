@@ -18,6 +18,7 @@ const projects = [
       "Enhanced brand credibility and online presence.",
     ],
     image: "https://i.ibb.co/27sW37qZ/Screenshot-2025-10-07-034243.png",
+    bgColor: "bg-[rgb(142,173,213)]",
     // result:
     //   "This project successfully transformed the client’s e-commerce platform into a scalable, user-friendly solution, driving significant growth and efficiency during high-demand period.",
   },
@@ -35,6 +36,7 @@ const projects = [
       "Delivered project on time with high client satisfaction",
     ],
     image: "https://i.ibb.co/CD0Qknv/Screenshot-2025-10-07-034916.png",
+    bgColor: "bg-[rgb(212,255,230)]",
     // result:
     //   "This project successfully transformed the client’s e-commerce platform into a scalable, user-friendly solution, driving significant growth and efficiency during high-demand period.",
   },
@@ -52,6 +54,7 @@ const projects = [
       "Enhanced client visibility and user engagement online.",
     ],
     image: "https://i.ibb.co/Xx2yqhh8/Screenshot-2025-10-07-035315.png",
+    bgColor: "bg-[hsl(303,88%,86%)]",
     // result:
     //   "This project successfully transformed the client’s e-commerce platform into a scalable, user-friendly solution, driving significant growth and efficiency during high-demand period.",
   },
@@ -86,7 +89,7 @@ export default function ShowcaseSection() {
         </div>
 
         {/* Card */}
-        <div className="bg-green-100  max-md:h-[88rem] text-black rounded-xl shadow-lg p-6 flex flex-col md:flex-row gap-6">
+        <div className={` ${projects[current].bgColor}  max-md:h-[88rem] text-black rounded-xl shadow-lg p-6 flex flex-col md:flex-row gap-6`}>
           <div className="absolute ">
             <h3 className="text-3xl max-md:text-2xl font-semibold">
               {projects[current].title}
@@ -132,7 +135,7 @@ export default function ShowcaseSection() {
               <ul className="space-y-2 text-gray-800">
                 {projects[current].results.map((result, idx) => (
                   <li key={idx} className="flex items-start ml-8 mt-2 gap-2">
-                    <FaCheckCircle className="text-black mt-1" />
+                    <FaCheckCircle className="text-black mt-1 min-w-5" />
                     <span>{result}</span>
                   </li>
                 ))}

@@ -40,7 +40,7 @@ export default function WhyChooseUs() {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             className="inline-flex items-center px-6 py-3 rounded-lg text-white font-medium 
-                       bg-gradient-to-r from-blue-600 to-indigo-500 shadow-lg hover:opacity-90 transition"
+                        bg-blue-600  shadow-lg hover:opacity-90 transition"
           >
             Get in Touch →
           </motion.a>

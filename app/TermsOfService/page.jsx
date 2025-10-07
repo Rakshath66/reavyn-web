@@ -1,5 +1,9 @@
-"use client";
+
 import React from "react";
+
+export const metadata = {
+  title: "TermsOfService | Reavyn Tech Alliance",
+ };
 
 const TermsOfService = () => {
   return (

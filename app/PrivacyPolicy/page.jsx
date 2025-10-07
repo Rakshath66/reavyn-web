@@ -1,5 +1,9 @@
-"use client";
+
 import React from "react";
+
+export const metadata = {
+  title: "PrivacyPolicy | Reavyn Tech Alliance",
+ };
 
 const PrivacyPolicy = () => {
   return (

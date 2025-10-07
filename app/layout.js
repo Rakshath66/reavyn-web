@@ -3,7 +3,7 @@ import Navbar from "./components/Navbar";
 import "./globals.css";
 
 export const metadata = {
-  title: "Reavyn",
+  title: "Home | Reavyn Tech Alliance",
   description: "Smart Digital Solutions",
   icons: {
     icon: "https://i.ibb.co/VWDMqc8c/lgo.png", // ya "/logo.png"
