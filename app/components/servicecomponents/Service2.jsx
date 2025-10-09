@@ -6,55 +6,55 @@ import Link from "next/link";
 
 const services = [
   {
-    imgg: "https://i.ibb.co/0yJW0yqw/Programming-Browser-1-Streamline-Ultimate-Regular-Free.png",
+    imgg: "https://i.ibb.co/nMQqgpr6/Custom-Website-App-Development.png",
     // link: "/",
     title: "Custom Website & App Development",
     description:
       "We craft scalable websites and apps tailored to your vision, from startups to enterprises.",
   },
   {
-    imgg: "https://i.ibb.co/0yJW0yqw/Programming-Browser-1-Streamline-Ultimate-Regular-Free.png",
+    imgg: "https://i.ibb.co/3YWYDxtZ/E-Commerce-Shopify-Solutions.png",
     // link: "/",
     title: "E-Commerce & Shopify Solutions",
     description:
       "Boost your online sales with custom e-commerce platforms and Shopify integrations.",
   },
   {
-    imgg: "https://i.ibb.co/0yJW0yqw/Programming-Browser-1-Streamline-Ultimate-Regular-Free.png",
+    imgg: "https://i.ibb.co/DDkBXkmC/AI-Chatbots-Smart-Virtual-Agents.png",
     // link: "/",
     title: "AI Chatbots & Smart Virtual Agents",
     description:
       "Enhance customer support with intelligent, 24/7 AI-powered chatbots.",
   },
   {
-    imgg: "https://i.ibb.co/0yJW0yqw/Programming-Browser-1-Streamline-Ultimate-Regular-Free.png",
+    imgg: "https://i.ibb.co/C31BvRNq/Workflow-Automation-CRM-Systems.png",
     // link: "/",
     title: "Workflow Automation & CRM Systems",
     description:
       "Streamline operations with bespoke automation and CRM solutions.",
   },
   {
-    imgg: "https://i.ibb.co/0yJW0yqw/Programming-Browser-1-Streamline-Ultimate-Regular-Free.png",
+    imgg: "https://i.ibb.co/ksH9Xb92/Saa-S-Websites.png",
     // link: "/",
     title: "SaaS Websites",
     description:
       "Build conversion-focused SaaS platforms for B2B founders and product teams.",
   },
   {
-    imgg: "https://i.ibb.co/0yJW0yqw/Programming-Browser-1-Streamline-Ultimate-Regular-Free.png",
+    imgg: "https://i.ibb.co/kgvHp99j/App-Development.png",
     // link: "/",
     title: "App Development (Android/iOS)",
     description:
       "Create robust mobile apps for startups and enterprises alike.",
   },
   {
-    imgg: "https://i.ibb.co/0yJW0yqw/Programming-Browser-1-Streamline-Ultimate-Regular-Free.png",
+    imgg: "https://i.ibb.co/QFK9VMgQ/Customized-CRM-Software.png",
     // link: "/",
     title: "Customized CRM Software",
     description: "Modernize your business with personalized CRM platforms.",
   },
   {
-    imgg: "https://i.ibb.co/0yJW0yqw/Programming-Browser-1-Streamline-Ultimate-Regular-Free.png",
+    imgg: "https://i.ibb.co/LDd7HPhn/Automation-Solutions.png",
     // link: "/",
     title: "Automation Solutions",
     description:
@@ -117,7 +117,7 @@ const Service2 = () => {
               {/* Card Content */}
               <div className="relative z-10 bg-black aspect-square cursor-pointer flex flex-col justify-center items-left p-6 text-left group-hover:border-transparent">
                 <div>
-                  <img src={service.imgg} className="mb-4 w-14 h-14" alt="" />
+                  <img src={service.imgg} className="mb-4 w-16 h-14" alt="" />
                   <h3 className="font-semibold text-xl mb-2">
                     {service.title}
                   </h3>

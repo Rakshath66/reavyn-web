@@ -70,7 +70,7 @@ export default function Footer() {
             Terms of Service
           </a>
           <div className="flex items-center space-x-4 ml-4">
-            <a href="#" className="hover:text-white">
+            <a href="https://www.linkedin.com/company/reavyn-pvt-ltd/?viewAsMember=true" className="hover:text-white">
               <FaLinkedin />
             </a>
             <a href="#" className="hover:text-white">
