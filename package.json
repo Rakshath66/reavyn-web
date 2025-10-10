@@ -8,9 +8,11 @@
     "start": "next start"
   },
   "dependencies": {
-     "@sendgrid/mail": "^8.1.6",
+    "@getbrevo/brevo": "^3.0.1",
+    "@sendgrid/mail": "^8.1.6",
     "aos": "^2.3.4",
     "autoprefixer": "^10.4.21",
+    "dotenv": "^17.2.3",
     "framer-motion": "^12.23.22",
     "gsap": "^3.13.0",
     "lucide-react": "^0.544.0",

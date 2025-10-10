@@ -1,6 +1,35 @@
-import sendgrid from "@sendgrid/mail";
+import nodemailer from "nodemailer";
+import { MongoClient } from 'mongodb';
 
-sendgrid.setApiKey(process.env.SENDGRID_API_KEY);
+let client;
+let db;
+let isConnected = false;
+
+// Initialize MongoDB connection
+async function connectToDatabase() {
+  if (isConnected && db) return db;
+  
+  if (!process.env.MONGODB_URI) {
+    throw new Error('MONGODB_URI is not defined in environment variables');
+  }
+  
+  try {
+    client = new MongoClient(process.env.MONGODB_URI, {
+      serverSelectionTimeoutMS: 5000, // 5 second timeout
+      socketTimeoutMS: 5000, // 5 second socket timeout
+      maxPoolSize: 10, // Maintain up to 10 socket connections
+    });
+    await client.connect();
+    db = client.db('reavyn'); // Use default database from URI
+    isConnected = true;
+    console.log("MongoDB connection established");
+    return db;
+  } catch (error) {
+    console.error("MongoDB connection failed:", error.message);
+    isConnected = false;
+    throw error;
+  }
+}
 
 export async function POST(req) {
   try {
@@ -13,9 +42,57 @@ export async function POST(req) {
       );
     }
 
-    const msg = {
-      to: process.env.RECEIVER_EMAIL,            // Your receiving email
-      from: process.env.SENDGRID_SENDER_EMAIL,   // Must be verified in SendGrid
+    // Save to MongoDB first (but don't fail if DB is unavailable)
+    try {
+      const database = await connectToDatabase();
+      const contacts = database.collection('contacts');
+      
+      const contactData = {
+        name,
+        email,
+        service: service || "",
+        message,
+        createdAt: new Date()
+      };
+      
+      await contacts.insertOne(contactData);
+      console.log("Contact saved to MongoDB");
+    } catch (dbError) {
+      console.error("Database Error (continuing with email):", dbError.message);
+      // Don't fail the request if DB save fails, continue with email
+    }
+
+    // Create transporter using SMTP
+    const transporter = nodemailer.createTransport({
+      host: process.env.SMTP_HOST,
+      port: process.env.SMTP_PORT || 587,
+      secure: false, // true for 465, false for other ports
+      auth: {
+        user: process.env.SMTP_USER,
+        pass: process.env.SMTP_PASS,
+      },
+      // Add connection timeout
+      connectionTimeout: 60000,
+      greetingTimeout: 30000,
+      socketTimeout: 60000,
+    });
+
+    // Verify connection
+    try {
+      await transporter.verify();
+      console.log("SMTP connection verified");
+    } catch (verifyError) {
+      console.error("SMTP connection failed:", verifyError);
+      return new Response(
+        JSON.stringify({ error: "Failed to connect to email server" }),
+        { status: 500 }
+      );
+    }
+
+    // Prepare email data
+    const mailData = {
+      from: process.env.SMTP_USER,
+      to: process.env.RECEIVER_EMAIL,
       subject: `New Contact Form Submission from ${name}`,
       html: `
         <h2>Contact Form Submission</h2>
@@ -26,7 +103,9 @@ export async function POST(req) {
       `,
     };
 
-    await sendgrid.send(msg);
+    // Send email
+    const info = await transporter.sendMail(mailData);
+    console.log("Email sent successfully:", info.messageId);
 
     return new Response(
       JSON.stringify({ message: "Email sent successfully!" }),
@@ -34,9 +113,12 @@ export async function POST(req) {
     );
   } catch (error) {
     // Detailed error logging
-    console.error("SendGrid Error:", error.response ? error.response.body : error);
+    console.error("Nodemailer Error:", error);
     return new Response(
-      JSON.stringify({ error: "Failed to send email" }),
+      JSON.stringify({ 
+        error: "Failed to send email",
+        details: error.message 
+      }),
       { status: 500 }
     );
   }
