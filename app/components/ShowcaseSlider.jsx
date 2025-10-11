@@ -106,7 +106,7 @@ export default function ShowcaseSection() {
             </div>
           </div>
           {/* Image */}
-          <div className="flex-shrink-0 mt-20 max-md:hidden max-md:mt-2">
+          <div className="flex-shrink-0 mt-20 max-md:hidden max-md:mt-2 -ml-6">
             <img
               src={projects[current].image}
               alt={projects[current].title}
