@@ -20,30 +20,28 @@ export default function ContactPage() {
     }));
   };
 
-
   const handleSubmit = async (e) => {
-  e.preventDefault();
-  setSending(true);
+    e.preventDefault();
+    setSending(true);
 
-  try {
-    const res = await fetch("/api/contact", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(formData),
-    });
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
 
-    const data = await res.json();
-    if (!res.ok) throw new Error(data.error || "Something went wrong");
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error || "Something went wrong");
 
-    setPopup(true);
-    setFormData({ name: "", email: "", service: "", message: "" });
-  } catch (err) {
-    alert(err.message);
-  } finally {
-    setSending(false);
-  }
-};
-
+      setPopup(true);
+      setFormData({ name: "", email: "", service: "", message: "" });
+    } catch (err) {
+      alert(err.message);
+    } finally {
+      setSending(false);
+    }
+  };
 
   const closePopup = () => setPopup(false);
 
@@ -68,11 +66,11 @@ export default function ContactPage() {
             </p>
             <p>
               <span className="font-semibold">Contact</span> —
-              support@reavyn.com | +91-9876543210
+              razi@reavyn.com | +91-8188988301
             </p>
             <p>
-              <span className="font-semibold">Address</span> — 123 Tech Lane,
-              Bangalore, India
+              <span className="font-semibold">Address</span> — New Ashok Nagar,
+              New Delhi, 110096, India
             </p>
           </div>
         </div>

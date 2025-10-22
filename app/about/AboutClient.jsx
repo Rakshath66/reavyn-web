@@ -155,10 +155,10 @@ export default function AboutClient() {
 
       {/* Info Card */}
       <div className="bg-black">
-        <section className="w-full mx-auto px-44 max-md:pl-6 bg-white  rounded-2xl shadow-md p-12 flex max-md:flex-col md:flex-row justify-between gap-10">
+        <section className="w-full mx-auto px-44 max-md:pl-6 bg-white text-black rounded-2xl shadow-md p-12 flex max-md:flex-col md:flex-row justify-between gap-10">
           {/* Left Side */}
           <div className="flex-1">
-            <p className="text-xl text-gray-600">Availability</p>
+            <p className="text-xl text-black">Availability</p>
             <h2 className="text-3xl max-md:text-2xl max-md:w-[340px] font-bold mt-2 leading-snug">
               Let’s connect & build your products{" "}
               <br className="max-md:hidden" />
@@ -173,20 +173,20 @@ export default function AboutClient() {
               <p className="flex gap-3 max-md:w-75 max-md:gap-8 text-gray-700">
                 <span className="w-20 font-medium">Contact</span>
                 <span>
-                  support@reavyn.com |{" "}
-                  <span className="whitespace-nowrap">+91-9876543210</span>
+                  razi@reavyn.com |{" "}
+                  <span className="whitespace-nowrap">+91-8188988301</span>
                 </span>
               </p>
               <p className="flex gap-3 max-md:w-75 max-md:gap-4 text-gray-700">
                 <span className="w-20 font-medium">Address</span>
-                <span>123 Tech Lane, Bangalore, India</span>
+                <span>New Ashok Nagar, New Delhi, 110096, India</span>
               </p>
             </div>
           </div>
 
           {/* Right Side */}
           <div className="flex-1 absolute max-md:relative max-md:ml-0 mt-14 ml-[48em]">
-            <p className="text-lg max-md:text-base max-md:w-75 text-gray-600">
+            <p className="text-lg max-md:text-base max-md:w-75 text-black">
               We’d love to hear from you, you’ll hear from us.
             </p>
             <h3 className="text-2xl max-md:w-75 font-bold mt-2">
@@ -196,7 +196,7 @@ export default function AboutClient() {
             <div className="flex items-center gap-6 mt-6">
               {/* LinkedIn */}
               <a
-                href="#"
+                href="https://www.linkedin.com/company/reavyn-pvt-ltd/?viewAsMember=true"
                 className="text-black hover:text-blue-600 transition"
                 aria-label="LinkedIn"
               >
