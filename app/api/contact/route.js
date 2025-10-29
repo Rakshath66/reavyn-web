@@ -91,7 +91,7 @@ export async function POST(req) {
 
     // Prepare email data
     const mailData = {
-      from: process.env.SMTP_USER,
+      from: '"Reavyn" <razi@reavyn.com>', // Use your verified sender
       to: process.env.RECEIVER_EMAIL,
       subject: `New Contact Form Submission from ${name}`,
       html: `
