@@ -1,5 +1,7 @@
 import React from "react";
-import { FaLinkedin, FaInstagram, FaTwitter, FaXing } from "react-icons/fa";
+import { FaLinkedin, FaInstagram, FaXing } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+
 
 export default function Footer() {
   return (
@@ -74,7 +76,7 @@ export default function Footer() {
               <FaLinkedin />
             </a>
             <a href="#" className="hover:text-white">
-              <FaTwitter />
+              <FaXTwitter />
             </a>
             <a href="#" className="hover:text-white">
               <FaInstagram />

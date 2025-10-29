@@ -103,19 +103,14 @@ const Service2 = () => {
             <motion.div
               key={index}
               whileHover={{ scale: 1.03 }}
-              className="relative group rounded-lg text-left p-[2px] transition-all duration-500"
+              className="relative group rounded-lg text-left p-[6px] transition-all duration-500"
             >
-              {/* Gradient Border */}
-              <div
-                className={`
-          absolute inset-0 blur-lg transition duration-400
-          bg-gradient-to-r from-[#7855ff] via-[#e682df] via-[#000000] via-[#265cde] to-[#0dd3a3]
-          opacity-100 sm:opacity-0 group-hover:opacity-100
-        `}
-              />
+              {/* Gradient border: always visible on mobile, hover activated only on md+ screens */}
+              <div className="absolute inset-0 bg-gradient-to-r from-[#7855ff] via-[#e682df] via-[#265cde] to-[#0dd3a3] opacity-70 blur-2xl md:opacity-0 md:group-hover:opacity-70 transition duration-500"></div>
+              <div className="absolute inset-0 bg-gradient-to-r from-[#7855ff] via-[#e682df] via-[#265cde] to-[#0dd3a3] p-[149px] md:opacity-0 md:group-hover:opacity-100 transition duration-500"></div>
 
               {/* Card Content */}
-              <div className="relative z-10 bg-black aspect-square cursor-pointer flex flex-col justify-center items-left p-6 text-left group-hover:border-transparent">
+              <div className="relative z-10 bg-black aspect-square cursor-pointer flex flex-col justify-center items-left p-5 text-left md:group-hover:border-transparent">
                 <div>
                   <img src={service.imgg} className="mb-4 w-16 h-14" alt="" />
                   <h3 className="font-semibold text-xl mb-2">

@@ -3,6 +3,8 @@ import React, { useEffect, useRef, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { CheckCircle } from "lucide-react";
 import WhyChooseUs from "../components/servicecomponents/WhyChooseUs";
+import { Linkedin, Instagram } from "lucide-react";
+import { BsTwitterX } from "react-icons/bs";
 
 const ContactClient = () => {
   const canvasRef = useRef(null);
@@ -270,6 +272,76 @@ const ContactClient = () => {
         </AnimatePresence>
       </section>
 
+      <section className="bg-white border border-gray-200 rounded-md shadow-sm py-8 px-44  max-md:px-6 flex flex-col md:flex-row justify-between items-start md:items-center gap-8">
+        {/* Left Side */}
+        <div className="space-y-4 max-md:w-75">
+          <div>
+            <p className="text-sm text-gray-500 font-medium">Availability</p>
+            <h2 className="text-4xl font-semibold text-gray-900 mt-1">
+              Let’s connect & build your products <br />
+              that connect with mass audience
+            </h2>
+          </div>
+
+          <div className="space-y-2 text-gray-700 text-sm">
+            <p>
+              <span className="font-semibold text-gray-900">Time</span> — Mon -
+              Sat | 10:00 AM – 6:00 PM IST
+            </p>
+            <p>
+              <span className="font-semibold text-gray-900">Contact</span> —{" "}
+              <a
+                href="mailto:razi@reavyn.com"
+                className="hover:text-blue-600 transition"
+              >
+                razi@reavyn.com
+              </a>{" "}
+              | +91-8188988301
+            </p>
+            <p>
+              <span className="font-semibold text-gray-900">Address</span> — New
+              Ashok Nagar, New Delhi, 110096, India
+            </p>
+          </div>
+        </div>
+
+        {/* Right Side */}
+        <div className="md:w-1/3 space-y-3">
+          <p className="text-gray-700 text-sm leading-relaxed">
+            We’d love to hear from you, you’ll hear from us.
+          </p>
+          <h3 className="font-bold text-xl text-gray-900">
+            Let’s Connect on Socials
+          </h3>
+
+          <div className="flex items-center gap-6 mt-6">
+            {/* LinkedIn */}
+            <a
+              href="https://www.linkedin.com/company/reavyn-pvt-ltd/?viewAsMember=true"
+              className="text-black hover:text-blue-600 transition"
+              aria-label="LinkedIn"
+            >
+              <Linkedin size={60} />
+            </a>
+            {/* Instagram */}
+            <a
+              href="#"
+              className="text-black hover:text-pink-500 transition"
+              aria-label="Instagram"
+            >
+              <Instagram size={60} />
+            </a>
+            {/* X (Twitter) */}
+            <a
+              href="#"
+              className="text-black hover:text-gray-700 transition"
+              aria-label="Twitter"
+            >
+              <BsTwitterX size={60} />
+            </a>
+          </div>
+        </div>
+      </section>
       {/* WhyChooseUs Section */}
       <WhyChooseUs />
     </>
